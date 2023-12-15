@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase to Lowercase</title>
+    <script type="text/javascript">
+
+        function myFunction() 
+        {
+            var str =String(document.getElementById("text").value)
+            var res = str.toLowerCase()  //Logic
+            document.getElementById("demo").innerHTML = res
+        }
+
+    </script>
+</head>
+<body>
+
+    Enter String : <input id="text"><br>
+    <button onclick="myFunction()">Click Here for Convert String</button>
+    <p id="demo"></p>
+    
+</body>
+</html>

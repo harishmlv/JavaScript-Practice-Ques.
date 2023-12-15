@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pattern 4</title>
+    <script type="text/javascript">
+
+      <!--Javascript Reversed pyramid star pattern-->
+/*It uses 2 loops inside the external loop one for printing spaces and the other to print the star. First loop 
+prints spaces and other loop print stars. Here is the code of the reverse pyramid star pattern. 
+The number of spaces in a row is i and the number of stars is 2 * (n – i) – 1. */
+
+      let n = 5;
+      for (let i = 0; i < n; i++)  // External loop
+      { 
+        for (let j = 0; j <i ; j++) // printing spaces
+        {
+          document.write("&nbsp&nbsp");
+        }
+        for (let k = 0; k < 2 * (n - i)-1; k++) // printing star
+        {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pattern 6</title>
+    <script type="text/javascript">
+
+                                 <!--Right pascal star pattern-->
+//The right pascal star pattern is created using 2 nested loops.
+//above pattern it is nothing but the right triangle star pattern and reversed triangle star attern together.
+
+
+        let n=5
+
+        for (let i = 1; i <= n; i++) 
+        {
+            for (let j = 0; j < i; j++) 
+            {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        for (let i = 1; i <= n - 1; i++) 
+        {
+            for (let j = 0; j < n - i; j++) 
+            {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

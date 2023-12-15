@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping of Number</title>
+    <script type="text/javascript">
+
+    function swap()
+    {
+        var a,b,c; 
+        a=Number(document.getElementById("first").value)
+        b=Number(document.getElementById("second").value)
+
+        c=a   //Logic 
+        a=b
+        b=c
+
+        document.getElementById("num1").value=a
+        document.getElementById("num2").value=b
+    }
+
+    </script>
+</head>
+<body>
+    value of A : <input id="first"><br>
+    value of B : <input id="second"><br><br>
+    <button onclick="swap()">Swap</button><br><br>
+    value of A : <input id="num1"><br>
+    value of B : <input id="num2">
+
+</body>
+</html>
