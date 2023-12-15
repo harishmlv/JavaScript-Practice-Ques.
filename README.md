@@ -1,2 +1,2 @@
-# JavaScript-Practice-Ques.
-JavaScript practice questions backup
+# JavaScript-Logical-Practice-Ques.
+JavaScript Logical practice questions backup
