@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Eligibility</title>
+    <script type="text/javascript">
+
+        function verify() 
+        {
+            var num
+            num = Number(document.getElementById("age").value)
+
+            if (num < 18) //Logic
+            {
+                alert("Not Eligible For Voting")
+            }
+            else 
+            {
+                alert("Eligible For Voting")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    Enter your Age : <input id="age">
+    <button onclick="verify()">Click me</button>
+</body>
+</html>

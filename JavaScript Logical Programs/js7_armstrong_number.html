@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+    <script type="text/javascript">
+
+        function armstrong() 
+        {
+            var a, b, c, d, num, arm = 0
+            num = Number(document.getElementById("input").value)
+
+            temp = num
+            while (temp > 0)  //Logic
+            {
+                a = temp % 10;
+                temp = parseInt(temp / 10); // parseInt used to convert float into Integer
+                arm = arm + a * a * a;
+            }
+            if (arm == num) 
+            {
+                alert("Armstrong number");
+            }
+            else 
+            {
+                alert("Not Armstrong number");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    Enter any Number: <input id="input">
+    <button onclick="armstrong()">Check</button>
+</body>
+
+</html>

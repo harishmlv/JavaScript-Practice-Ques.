@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Even Numbers in Array</title>
+    <script type="text/javascript">
+
+        function sum() 
+        {
+            const array = [12, 21, 32, 45, 56, 68, 77, 84, 97, 18,];
+            let count = 0;
+
+            for (let i = 0; i < array.length; i++) 
+            {
+                if (array[i] % 2 === 0) 
+                {
+                    count++;
+                }
+            }
+            alert(count)
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="sum()">Count of Even Numbers in Array</button>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom Number</title>
+    <script type="text/javascript">
+
+        function palindrom() 
+        {
+            var num, a, b, temp = 0
+            no = Number(document.getElementById("input").value)
+
+            b = no
+
+            while (no > 0)  // Logic
+            {
+                a = no % 10
+                no = parseInt(no / 10) // parseInt used to convert float into Integer
+                temp = temp * 10 + a
+            }
+            if (temp == b) 
+            {
+                alert("Palindrome number")
+            }
+            else 
+            {
+                alert("Not Palindrome number")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    Enter any Number: <input id="input">
+    <button onclick="palindrom()">Check</button>
+</body>
+
+</html>

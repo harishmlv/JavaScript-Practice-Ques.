@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of Number</title>
+    <script type="text/javascript">
+
+        function factorial()
+        {
+            var i,num,fact=1
+            num=Number(document.getElementById("input").value)
+            for( i=1 ; i<=num ; i++)  
+            {
+                fact=fact*i  //logic
+            }
+            document.getElementById("answer").value=fact
+        }
+        
+    </script>
+</head>
+<body>
+    Enter any Number : <input id="input">
+    <button onclick="factorial()">Submit</button><br>
+    Factorial is : <input id="answer">
+</body>
+</html>
